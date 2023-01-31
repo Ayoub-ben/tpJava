@@ -41,27 +41,32 @@ public class MyMovieServiceController {
     }
 
 
-    @ApiOperation(value = "Get list of Students in the System ", response = Iterable.class, tags = "getStudents")
+    @ApiOperation(value = "Get acteur in the System ", response = Iterable.class, tags = "getAllActeurs")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Suceess|OK"),
             @ApiResponse(code = 401, message = "not authorized!"),
             @ApiResponse(code = 403, message = "forbidden!!!"),
             @ApiResponse(code = 404, message = "not found!!!") })
 
-
-    @ApiOperation(value = "Get acteur by name ", response = Acteur.class, tags = "getActeurByName")
-    @RequestMapping(value = "/getActeurByName/{firstName}")
-    public Acteur getActeurByName(@PathVariable(value = "firstName") String firstName) {
-        return acteurs.stream().filter(x -> x.getFirstName().equalsIgnoreCase(firstName)).collect(Collectors.toList()).get(0);
-    }
-
-    @ApiOperation(value = "Get all acteur ", response = Acteur.class, tags = "getAllActeurs")
     @RequestMapping(value = "/getAllActeurs/{acteurs}")
     public List<Acteur> getAllActeurs() {
         return acteurs;
     }
 
-    @ApiOperation(value = "Get all films ", response = Film.class, tags = "getAllFilms")
+    @ApiOperation(value = "Get all acteur ", response = Acteur.class, tags = "getActeurByName")
+    @RequestMapping(value = "/getActeurByName/{firstName}")
+    public Acteur getActeurByName(@PathVariable(value = "firstName") String firstName) {
+        return acteurs.stream().filter(x -> x.getFirstName().equalsIgnoreCase(firstName)).collect(Collectors.toList()).get(0);
+    }
+
+
+    @ApiOperation(value = "Get acteur in the System ", response = Iterable.class, tags = "getAllFilms")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Suceess|OK"),
+            @ApiResponse(code = 401, message = "not authorized!"),
+            @ApiResponse(code = 403, message = "forbidden!!!"),
+            @ApiResponse(code = 404, message = "not found!!!") })
+
     @RequestMapping(value = "/getAllFilms/{film}")
     public List<Film> getAllFilms() {
         return films;
@@ -96,9 +101,5 @@ public class MyMovieServiceController {
         }
         return film0 ;
     }
-
-
-
-
 
 }

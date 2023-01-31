@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Employee-Service/Employee-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/MyFinder/Api-Gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/Eureka-server/Eureka-server/pom.xml" />
       </list>
     </option>
   </component>

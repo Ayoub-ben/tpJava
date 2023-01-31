@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyFinder/Api-Gateway/com-self-sprintboot-learning-apigateway.iml" filepath="$PROJECT_DIR$/MyFinder/Api-Gateway/com-self-sprintboot-learning-apigateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eureka-server/Eureka-server/com-self-sprintboot-learning-eureka.iml" filepath="$PROJECT_DIR$/Eureka-server/Eureka-server/com-self-sprintboot-learning-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/Employee-Service/Employee-Service/com.self.sprintboot.learning.employee.iml" filepath="$PROJECT_DIR$/Employee-Service/Employee-Service/com.self.sprintboot.learning.employee.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tpJava.iml" filepath="$PROJECT_DIR$/.idea/tpJava.iml" />
     </modules>
